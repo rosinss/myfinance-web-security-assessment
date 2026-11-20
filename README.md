@@ -219,6 +219,46 @@ The Stored XSS assessment focused on validating whether user-controlled applicat
 - Verified persistent script execution.
 - Documented the vulnerability and associated security risks.
 
+### Practical Demonstration 1 — Script Injection
+
+#### Payload Injection
+
+![XSS Script Input](./screenshots/xss-script-input.png)
+
+*Figure 1: Script injection through a transaction input field.*
+
+#### JavaScript Execution
+
+![XSS Script Alert](./screenshots/xss-script-alert.png)
+
+*Figure 2: Browser alert demonstrating successful JavaScript execution.*
+
+#### Stored Transaction
+
+![XSS First Transaction](./screenshots/xss-first-transaction.png)
+
+*Figure 3: Transaction record containing the injected content.*
+
+### Practical Demonstration 2 — Image-Based XSS
+
+#### Alternative Payload Injection
+
+![XSS Image Input](./screenshots/xss-image-input.png)
+
+*Figure 4: Testing an alternative image-based XSS payload.*
+
+#### JavaScript Execution Verification
+
+![XSS Image Alert](./screenshots/xss-image-alert.png)
+
+*Figure 5: Browser alert confirming JavaScript execution.*
+
+#### Stored Transaction Records
+
+![XSS Stored Transactions](./screenshots/xss-stored-transactions.png)
+
+*Figure 6: Stored transaction records associated with vulnerability testing.*
+
 ### Testing Results
 
 | Test Case | Outcome |
@@ -226,9 +266,14 @@ The Stored XSS assessment focused on validating whether user-controlled applicat
 | User-controlled input analysis | Completed |
 | PHP output handling review | Insecure output identified |
 | Stored XSS testing | Successfully demonstrated |
+| Script-based XSS testing | Successful |
+| Image-based XSS testing | Successful |
 | Persistent JavaScript execution | Verified |
 | Vulnerability classification | CWE-79 |
 | Mitigation recommendation | Documented |
+
+The practical testing demonstrated the security risks associated with rendering untrusted transaction data without appropriate output encoding.
+
 
 ## 11 / Potential Security Impact
 
