@@ -351,7 +351,31 @@ These recommendations were documented as corrective measures. Their implementati
 - Technical security reporting
 - Cybersecurity teamwork
 
-## 15 / Future Improvements
+## 15 / Repository Structure
+
+```text
+myfinance-web-security-assessment/
+├── README.md
+├── documentation/
+│   ├── source-code-review.md
+│   └── mitigation.md
+└── screenshots/
+    ├── README.md
+    ├── xss-script-input.png
+    ├── xss-script-alert.png
+    ├── xss-first-transaction.png
+    ├── xss-image-input.png
+    ├── xss-image-alert.png
+    └── xss-stored-transactions.png
+```
+
+### Additional Documentation
+
+- [White-box Source Code Security Review](./documentation/source-code-review.md)
+- [Security Mitigation Recommendations](./documentation/mitigation.md)
+- [Practical Security Testing Evidence](./screenshots/)
+
+## 16 / Future Improvements
 
 - [ ] Integrate automated static application security testing.
 - [ ] Integrate dynamic application security testing.
@@ -362,14 +386,14 @@ These recommendations were documented as corrective measures. Their implementati
 - [ ] Develop automated security regression tests.
 - [ ] Integrate security testing into a CI/CD pipeline.
 
-## 16 / Learning Resources
+## 17 / Learning Resources
 
 - [OWASP Top 10](https://owasp.org/www-project-top-ten/)
 - [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
 - [OWASP XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 - [CWE-79: Cross-Site Scripting](https://cwe.mitre.org/data/definitions/79.html)
 
-## 17 / Disclaimer
+## 18 / Disclaimer
 
 This repository documents an academic web application security assessment conducted within an authorized and controlled testing environment.
 
